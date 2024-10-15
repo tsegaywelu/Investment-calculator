@@ -1,15 +1,24 @@
-import React, { useState } from "react";
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Displaycontent from "./Displaycontent";
+import React from "react";
+import Player from "./components/Player";
+import { Add } from "./Add";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Displaycontent />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <img src="../public/tic.png" alt="" className="mx-auto h-16 " />
+      <div
+        id="game-container"
+        className=" bg-slate-200   mx-auto flex  justify-evenly flex-col max-w-4xl p-10 mt-5 "
+      >
+        <div className="flex justify-evenly">
+          <Player playername={"player 1"} playersymbol={"X"} />
+          <Player playername={"player 2"} playersymbol={"O"} />
+        </div>
+        <div id="game-boared">
+          <h1>game boared</h1>
+        </div>
+      </div>
+    </div>
   );
 };
 

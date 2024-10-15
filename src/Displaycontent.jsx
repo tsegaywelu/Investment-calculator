@@ -1,17 +1,26 @@
 import React from "react";
+import Add from "./Add";
 
 const Displaycontent = () => {
-  const myobject = {
-    name: "tsegay",
-    age: 67,
-    country: "eretria",
-  };
   return (
     <div>
-      <h1>we are on the Displaycontent page </h1>
-      {Object.values(myobject).map((x) => (
-        <p key={x}>{x}</p>
-      ))}
+      <Add
+        button={
+          <div>
+            <div>how to send this uing the button </div>
+            <div>how to send this uing the button </div>
+            <div>how to send this uing the button </div>
+            <div>how to send this uing the button </div>
+          </div>
+        }
+      />
+
+      <Add Container={"div"}>
+        <p>send this warper prop </p>
+        <p>send this warper prop </p>
+        <p>send this warper prop </p>
+        <p>send this warper prop </p>
+      </Add>
     </div>
   );
 };
