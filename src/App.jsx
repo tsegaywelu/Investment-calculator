@@ -1,6 +1,7 @@
 import React from "react";
 import Player from "./components/Player";
 import { Add } from "./Add";
+import Gameboared from "./components/Gameboared";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
           <Player playername={"player 2"} playersymbol={"O"} />
         </div>
         <div id="game-boared">
-          <h1>game boared</h1>
+          <Gameboared />
         </div>
       </div>
     </div>
