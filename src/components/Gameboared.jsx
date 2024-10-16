@@ -84,7 +84,7 @@ const Gameboared = ({ activeis, activesymbol }) => {
             {row.map((col, colindex) => (
               <li key={colindex} className=" mx-1 bg-yellow-900 ">
                 <button
-                  className="bg-blue-700 p-8 m-3 "
+                  className="bg-blue-700 p-8 m-3 sm:p-1 sm:m-1 "
                   onClick={() => updateboared(rowindex, colindex)}
                 >
                   {gamebo[rowindex][colindex] || " "}
