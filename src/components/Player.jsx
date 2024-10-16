@@ -7,7 +7,7 @@ const Player = ({ playername: initialplayername, playersymbol }) => {
   let content = (
     <span
       id="player"
-      className="pl-20 pr-20  inline-block font-extrabold text-black uppercase"
+      className="md:pl-20 md:pr-20   inline-block font-extrabold text-black uppercase"
     >
       {playername}
     </span>
